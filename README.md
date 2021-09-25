@@ -26,7 +26,7 @@ Generalization of one hot encoding (pandas.get_dummies) for multiple categorical
         2     a     c     f     b
         3     h     g     c     a
         4     g     c     h     c
-        >>> KHot(df,df.columns)
+        >>> kHot(df,df.columns)
            a  b  c  e  f  g  h
         0  1  1  0  1  1  0  0
         1  1  1  1  1  0  0  0
@@ -34,7 +34,7 @@ Generalization of one hot encoding (pandas.get_dummies) for multiple categorical
         3  1  0  1  0  0  1  1
         4  0  0  2  0  0  1  1
         
-        >>> KHot(df,df.columns,dummy_na=True)
+        >>> kHot(df,df.columns,dummy_na=True)
            a  b  c  e  f  g  h  nan
         0  1  1  0  1  1  0  0    0
         1  1  1  1  1  0  0  0    0
